@@ -1,7 +1,72 @@
-.panel-heading {
+/* .panel-heading {
     color:blue
 }
 
 .panel-body {
     color:blue
+} */
+
+
+/* body {
+    background: grey ;
 }
+
+#container {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+
+h1 {
+    width: 100%; 
+    margin: auto;
+    padding-top: 25%;
+    padding-bottom: 10px;
+    font-size: 48px;
+}
+
+.bottom {
+    padding-bottom: 10%;
+}
+
+#guess {
+    margin: auto;
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+.body-container {
+    text-align: center;
+    width: 80%;
+}
+
+.size {
+    font-size: 28px;
+    text-align: left;
+    padding-left: 43%;
+    margin-bottom: 30px;
+}
+
+.sizeNumber {
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
+#img {
+    margin: 0 auto;
+}
+
+#winImage {
+    width:300px;
+} */
