@@ -29,15 +29,15 @@ In this assignment, you'll create one of two possible computer games: Word Guess
 |  └── javascript
 |     └── game.js
 └── index.html -->
-```
+<!-- ``` -->
 
-5. Push the above changes to GitHub.
+<!-- 5. Push the above changes to GitHub. -->
 
-6. Choose whichever game you'd like to build. Making the Psychic game will prove less challenging than coding Word Guess. However, as the challenge of the Word Guess exercise provides a more comprehensive review of this unit's material, we suggest attempting that assignment first.
+<!-- 6. Choose whichever game you'd like to build. Making the Psychic game will prove less challenging than coding Word Guess. However, as the challenge of the Word Guess exercise provides a more comprehensive review of this unit's material, we suggest attempting that assignment first. -->
 
-7. Note: There's no shame if you'd prefer submitting Psychic—it's still a proper challenge.
+<!-- 7. Note: There's no shame if you'd prefer submitting Psychic—it's still a proper challenge.
 
-8. Push your selected game to Github Pages.
+8. Push your selected game to Github Pages. -->
 
 
 <!-- ## Option One: Psychic Game (Basic)
