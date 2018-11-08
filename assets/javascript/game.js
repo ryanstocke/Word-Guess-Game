@@ -1,9 +1,10 @@
 var words = ["baseball", "basketball", "football", "soccer", "swimming", "hockey", "cycling", "tennis", "volleyball", "golf", "boxing", "wrestling", "running",];
+lettersInWord =[];
 chosenWord = "";
 wordLetters = [];
 numBlanks = 0;
 blanks = [];
-amtGuesses = 6;
+amtGuesses = 8;
 wrongAnswers = [];
 sameLetter = [];
 
@@ -16,11 +17,21 @@ document.getElementById("guessRemain").innerHTML = "Guesses Remaining: " + amtGu
 
 function playGame() {
     blanks = [];
-    amtGuesses = 6;
+    amtGuesses = 8;
     wrongAnswers = [];
     sameLetter = [];
 
-    chosenWord = words[Math.floor(Math.random() * words.length)];
+    var random= (Math.floor(Math.random() * words.length))
+    chosenWord = words[random];
+    for (i = 0; i < (words[random]).length; i++) {
+        lettersInWord.push((words[random]).charAt(i));
+        // console.log ((words[random]).charAt(i));
+        }
+    
+    for (i = 0; i < lettersInWord.length; i++) {
+        console.log (lettersInWord[i]);
+    }
+
 
     wordLetters = chosenWord.split("");
     numBlanks = wordLetters.length;
@@ -53,7 +64,7 @@ function matchLetters(letter) {
         }
     };
 
-    if (sameLetter.indexOf(letter) == -1) {
+    if (lettersInWord.indexOf(letter) > -1) {
         sameLetter.push(letter);
         amtGuesses--;
     }
@@ -70,7 +81,7 @@ function matchLetters(letter) {
         if (wrongAnswers.indexOf(letter) === -1) {
             wrongAnswers.push(letter);
         } else {
-            console.log("you already guessed that letter: " + letter);
+           alert("you already guessed that letter: " + letter);
         };
     }
 };
