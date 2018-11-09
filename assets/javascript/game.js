@@ -4,7 +4,7 @@ chosenWord = "";
 wordLetters = [];
 numBlanks = 0;
 blanks = [];
-amtGuesses = 8;
+amtGuesses = 6;
 wrongAnswers = [];
 sameLetter = [];
 
@@ -17,7 +17,7 @@ document.getElementById("guessRemain").innerHTML = "Guesses Remaining: " + amtGu
 
 function playGame() {
     blanks = [];
-    amtGuesses = 8;
+    amtGuesses = 6;
     wrongAnswers = [];
     sameLetter = [];
 
@@ -64,7 +64,7 @@ function matchLetters(letter) {
         }
     };
 
-    if (lettersInWord.indexOf(letter) > -1) {
+    if (lettersInWord.indexOf(letter) == -1) {
         sameLetter.push(letter);
         amtGuesses--;
     }
@@ -91,7 +91,7 @@ function updateGameResults() {
     document.getElementById("letters").innerHTML = blanks.join(" ");
     document.getElementById("guessRemain").innerHTML =
         "Guesses Remaining: " + amtGuesses;
-    document.getElementById("wrong-guess").innerHTML = "Wrong Guesses: " + wrongAnswers.join(" ");
+    document.getElementById("wrong-guess").innerHTML = "Wrong Guesses: " + wrongAnswers;
 
     if (wordLetters.join("") === blanks.join("")) {
         winCounter++;
